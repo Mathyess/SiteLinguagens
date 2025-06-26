@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guia Completo - Linguagens, Frameworks e APIs</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/prism.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+</head>
+<body data-theme="dark">
+  <header>
+    <nav class="navbar">
+      <div class="logo"><i class="fas fa-code"></i> DevGuide</div>
+      <ul class="nav-links">
+        <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#linguagens"><i class="fas fa-terminal"></i> Linguagens</a></li>
+        <li><a href="#frameworks"><i class="fas fa-layer-group"></i> Frameworks</a></li>
+        <li><a href="#api"><i class="fas fa-plug"></i> API</a></li>
+      </ul>
+      <button class="theme-toggle" aria-label="Alternar tema" onclick="toggleTheme()"><i class="fas fa-moon"></i></button>
+      <button class="lang-toggle" aria-label="Alternar idioma" onclick="toggleLang()"><i class="fas fa-language"></i></button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Seção Hero -->
+    <section id="home" class="hero" data-aos="fade-up">
+      <h1>Guia Completo de Desenvolvimento</h1>
+      <p>Descubra as principais linguagens de programação, frameworks modernos e como trabalhar com APIs</p>
+      <div class="video-container" data-aos="zoom-in">
+        <iframe width="100%" height="340" src="https://www.youtube.com/embed/8mei6uVttho" title="O que é Programação? - Curso de Programação para Iniciantes" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="cta-buttons">
+        <a href="#linguagens" class="btn"><i class="fas fa-terminal"></i> Explorar Linguagens</a>
+        <a href="#frameworks" class="btn"><i class="fas fa-layer-group"></i> Ver Frameworks</a>
+        <a href="#api" class="btn"><i class="fas fa-plug"></i> Testar API</a>
+      </div>
+    </section>
+
+    <!-- Seção Linguagens -->
+    <section id="linguagens" class="section">
+      <div class="section-header" data-aos="fade-up">
+        <h2><i class="fas fa-terminal"></i> Linguagens de Programação</h2>
+        <p>Conheça as principais linguagens que moldaram a história da computação</p>
+      </div>
+
+      <div class="timeline-container">
+        <!-- C -->
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-content">
+            <div class="lang-header">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" class="lang-icon">
+              <div class="lang-info">
+                <h3>C</h3>
+                <span class="lang-year">1972</span>
+              </div>
+            </div>
+            <div class="lang-details">
+              <p><strong>Criador:</strong> Dennis Ritchie (Bell Labs)</p>
+              <p><strong>Objetivo:</strong> Desenvolvimento de sistemas e softwares de baixo nível</p>
+              <p><strong>Aplicações:</strong> Sistemas operacionais, drivers, embarcados</p>
+            </div>
+            <div class="code-example">
+              <pre><code class="language-c">#include <stdio.h>
+int main() {
+  printf("Hello, World!\n");
+  return 0;
+}</code></pre>
+            </div>
+            <div class="lang-links">
+              <a href="https://devdocs.io/c/" target="_blank"><i class="fas fa-book"></i> Documentação</a>
+              <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank"><i class="fab fa-wikipedia-w"></i> Wikipedia</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Java -->
+        <div class="timeline-item" data-aos="fade-left">
+          <div class="timeline-content">
+            <div class="lang-header">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="lang-icon">
+              <div class="lang-info">
+                <h3>Java</h3>
+                <span class="lang-year">1995</span>
+              </div>
+            </div>
+            <div class="lang-details">
+              <p><strong>Criador:</strong> James Gosling (Sun Microsystems)</p>
+              <p><strong>Objetivo:</strong> Portabilidade e aplicações corporativas</p>
+              <p><strong>Aplicações:</strong> Web, mobile, sistemas corporativos</p>
+            </div>
+            <div class="code-example">
+              <pre><code class="language-java">public class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello, World!");
+  }
+}</code></pre>
+            </div>
+            <div class="lang-links">
+              <a href="https://devdocs.io/openjdk~11/" target="_blank"><i class="fas fa-book"></i> Documentação</a>
+              <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank"><i class="fab fa-wikipedia-w"></i> Wikipedia</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Python -->
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-content">
+            <div class="lang-header">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="lang-icon">
+              <div class="lang-info">
+                <h3>Python</h3>
+                <span class="lang-year">1991</span>
+              </div>
+            </div>
+            <div class="lang-details">
+              <p><strong>Criador:</strong> Guido van Rossum</p>
+              <p><strong>Objetivo:</strong> Simplicidade e legibilidade</p>
+              <p><strong>Aplicações:</strong> Data Science, web, automação, IA</p>
+            </div>
+            <div class="code-example">
+              <pre><code class="language-python">print("Hello, World!")</code></pre>
+            </div>
+            <div class="lang-links">
+              <a href="https://docs.python.org/3/" target="_blank"><i class="fas fa-book"></i> Documentação</a>
+              <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank"><i class="fab fa-wikipedia-w"></i> Wikipedia</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="timeline-item" data-aos="fade-left">
+          <div class="timeline-content">
+            <div class="lang-header">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="lang-icon">
+              <div class="lang-info">
+                <h3>JavaScript</h3>
+                <span class="lang-year">1995</span>
+              </div>
+            </div>
+            <div class="lang-details">
+              <p><strong>Criador:</strong> Brendan Eich (Netscape)</p>
+              <p><strong>Objetivo:</strong> Interatividade em páginas web</p>
+              <p><strong>Aplicações:</strong> Web, front-end, back-end (Node.js)</p>
+            </div>
+            <div class="code-example">
+              <pre><code class="language-javascript">console.log("Hello, World!");</code></pre>
+            </div>
+            <div class="lang-links">
+              <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank"><i class="fas fa-book"></i> Documentação</a>
+              <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank"><i class="fab fa-wikipedia-w"></i> Wikipedia</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- C++ -->
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-content">
+            <div class="lang-header">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" class="lang-icon">
+              <div class="lang-info">
+                <h3>C++</h3>
+                <span class="lang-year">1985</span>
+              </div>
+            </div>
+            <div class="lang-details">
+              <p><strong>Criador:</strong> Bjarne Stroustrup</p>
+              <p><strong>Objetivo:</strong> Programação orientada a objetos e desempenho</p>
+              <p><strong>Aplicações:</strong> Jogos, sistemas, aplicações de alto desempenho</p>
+            </div>
+            <div class="code-example">
+              <pre><code class="language-cpp">#include <iostream>
+int main() {
+  std::cout << "Hello, World!" << std::endl;
+  return 0;
+}</code></pre>
+            </div>
+            <div class="lang-links">
+              <a href="https://en.cppreference.com/w/" target="_blank"><i class="fas fa-book"></i> Documentação</a>
+              <a href="https://en.wikipedia.org/wiki/C%2B%2B" target="_blank"><i class="fab fa-wikipedia-w"></i> Wikipedia</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- C# -->
+        <div class="timeline-item" data-aos="fade-left">
+          <div class="timeline-content">
+            <div class="lang-header">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" class="lang-icon">
+              <div class="lang-info">
+                <h3>C#</h3>
+                <span class="lang-year">2000</span>
+              </div>
+            </div>
+            <div class="lang-details">
+              <p><strong>Criador:</strong> Microsoft</p>
+              <p><strong>Objetivo:</strong> Desenvolvimento na plataforma .NET</p>
+              <p><strong>Aplicações:</strong> Desktop, web, jogos</p>
+            </div>
+            <div class="code-example">
+              <pre><code class="language-csharp">using System;
+class Program {
+  static void Main() {
+    Console.WriteLine("Hello, World!");
+  }
+}</code></pre>
+            </div>
+            <div class="lang-links">
+              <a href="https://docs.microsoft.com/pt-br/dotnet/csharp/" target="_blank"><i class="fas fa-book"></i> Documentação</a>
+              <a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" target="_blank"><i class="fab fa-wikipedia-w"></i> Wikipedia</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PHP -->
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-content">
+            <div class="lang-header">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" class="lang-icon">
+              <div class="lang-info">
+                <h3>PHP</h3>
+                <span class="lang-year">1995</span>
+              </div>
+            </div>
+            <div class="lang-details">
+              <p><strong>Criador:</strong> Rasmus Lerdorf</p>
+              <p><strong>Objetivo:</strong> Desenvolvimento web dinâmico</p>
+              <p><strong>Aplicações:</strong> Web, CMS, e-commerce</p>
+            </div>
+            <div class="code-example">
+              <pre><code class="language-php">&lt;?php
+echo "Hello, World!";
+?&gt;</code></pre>
+            </div>
+            <div class="lang-links">
+              <a href="https://www.php.net/docs.php" target="_blank"><i class="fas fa-book"></i> Documentação</a>
+              <a href="https://en.wikipedia.org/wiki/PHP" target="_blank"><i class="fab fa-wikipedia-w"></i> Wikipedia</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ruby -->
+        <div class="timeline-item" data-aos="fade-left">
+          <div class="timeline-content">
+            <div class="lang-header">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" alt="Ruby" class="lang-icon">
+              <div class="lang-info">
+                <h3>Ruby</h3>
+                <span class="lang-year">1995</span>
+              </div>
+            </div>
+            <div class="lang-details">
+              <p><strong>Criador:</strong> Yukihiro Matsumoto</p>
+              <p><strong>Objetivo:</strong> Simplicidade e produtividade</p>
+              <p><strong>Aplicações:</strong> Web, automação, scripts</p>
+            </div>
+            <div class="code-example">
+              <pre><code class="language-ruby">puts "Hello, World!"</code></pre>
+            </div>
+            <div class="lang-links">
+              <a href="https://ruby-doc.org/" target="_blank"><i class="fas fa-book"></i> Documentação</a>
+              <a href="https://en.wikipedia.org/wiki/Ruby_(programming_language)" target="_blank"><i class="fab fa-wikipedia-w"></i> Wikipedia</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Go -->
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-content">
+            <div class="lang-header">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" alt="Go" class="lang-icon">
+              <div class="lang-info">
+                <h3>Go</h3>
+                <span class="lang-year">2009</span>
+              </div>
+            </div>
+            <div class="lang-details">
+              <p><strong>Criador:</strong> Google (Robert Griesemer, Rob Pike, Ken Thompson)</p>
+              <p><strong>Objetivo:</strong> Concorrência e eficiência</p>
+              <p><strong>Aplicações:</strong> Microserviços, cloud, sistemas distribuídos</p>
+            </div>
+            <div class="code-example">
+              <pre><code class="language-go">package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Hello, World!")
+}</code></pre>
+            </div>
+            <div class="lang-links">
+              <a href="https://golang.org/doc/" target="_blank"><i class="fas fa-book"></i> Documentação</a>
+              <a href="https://en.wikipedia.org/wiki/Go_(programming_language)" target="_blank"><i class="fab fa-wikipedia-w"></i> Wikipedia</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rust -->
+        <div class="timeline-item" data-aos="fade-left">
+          <div class="timeline-content">
+            <div class="lang-header">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-original.svg" alt="Rust" class="lang-icon">
+              <div class="lang-info">
+                <h3>Rust</h3>
+                <span class="lang-year">2010</span>
+              </div>
+            </div>
+            <div class="lang-details">
+              <p><strong>Criador:</strong> Mozilla Research</p>
+              <p><strong>Objetivo:</strong> Segurança de memória e performance</p>
+              <p><strong>Aplicações:</strong> Sistemas, web assembly, embarcados</p>
+            </div>
+            <div class="code-example">
+              <pre><code class="language-rust">fn main() {
+    println!("Hello, World!");
+}</code></pre>
+            </div>
+            <div class="lang-links">
+              <a href="https://doc.rust-lang.org/book/" target="_blank"><i class="fas fa-book"></i> Documentação</a>
+              <a href="https://en.wikipedia.org/wiki/Rust_(programming_language)" target="_blank"><i class="fab fa-wikipedia-w"></i> Wikipedia</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Swift -->
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-content">
+            <div class="lang-header">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" alt="Swift" class="lang-icon">
+              <div class="lang-info">
+                <h3>Swift</h3>
+                <span class="lang-year">2014</span>
+              </div>
+            </div>
+            <div class="lang-details">
+              <p><strong>Criador:</strong> Apple</p>
+              <p><strong>Objetivo:</strong> Desenvolvimento iOS/macOS moderno</p>
+              <p><strong>Aplicações:</strong> iOS, macOS, watchOS, tvOS</p>
+            </div>
+            <div class="code-example">
+              <pre><code class="language-swift">print("Hello, World!")</code></pre>
+            </div>
+            <div class="lang-links">
+              <a href="https://docs.swift.org/swift-book/" target="_blank"><i class="fas fa-book"></i> Documentação</a>
+              <a href="https://en.wikipedia.org/wiki/Swift_(programming_language)" target="_blank"><i class="fab fa-wikipedia-w"></i> Wikipedia</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kotlin -->
+        <div class="timeline-item" data-aos="fade-left">
+          <div class="timeline-content">
+            <div class="lang-header">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin" class="lang-icon">
+              <div class="lang-info">
+                <h3>Kotlin</h3>
+                <span class="lang-year">2011</span>
+              </div>
+            </div>
+            <div class="lang-details">
+              <p><strong>Criador:</strong> JetBrains</p>
+              <p><strong>Objetivo:</strong> Desenvolvimento Android moderno e seguro</p>
+              <p><strong>Aplicações:</strong> Android, back-end, multiplataforma</p>
+            </div>
+            <div class="code-example">
+              <pre><code class="language-kotlin">fun main() {
+    println("Hello, World!")
+}</code></pre>
+            </div>
+            <div class="lang-links">
+              <a href="https://kotlinlang.org/docs/home.html" target="_blank"><i class="fas fa-book"></i> Documentação</a>
+              <a href="https://en.wikipedia.org/wiki/Kotlin_(programming_language)" target="_blank"><i class="fab fa-wikipedia-w"></i> Wikipedia</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Frameworks -->
+    <section id="frameworks" class="section">
+      <div class="section-header" data-aos="fade-up">
+        <h2><i class="fas fa-layer-group"></i> Frameworks Modernos</h2>
+        <p>Descubra os frameworks mais utilizados e influentes do mercado</p>
+      </div>
+
+      <div class="frameworks-grid">
+        <!-- React -->
+        <div class="framework-item" data-aos="zoom-in">
+          <div class="framework-header">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="framework-icon">
+            <h3>React</h3>
+            <span class="framework-lang">JavaScript</span>
+          </div>
+          <div class="framework-content">
+            <p><strong>Criador:</strong> Facebook</p>
+            <p><strong>Finalidade:</strong> Construção de interfaces de usuário (UI) reativas</p>
+            <p><strong>Características:</strong> Curva de aprendizado moderada, alta performance, grande comunidade</p>
+            <p><strong>Principais usos:</strong> Web apps, SPAs, mobile (React Native)</p>
+            <div class="framework-links">
+              <a href="https://react.dev/" target="_blank"><i class="fas fa-book"></i> Documentação</a>
+              <a href="https://en.wikipedia.org/wiki/React_(JavaScript_library)" target="_blank"><i class="fab fa-wikipedia-w"></i> Wikipedia</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Angular -->
+        <div class="framework-item" data-aos="zoom-in">
+          <div class="framework-header">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular" class="framework-icon">
+            <h3>Angular</h3>
+            <span class="framework-lang">TypeScript</span>
+          </div>
+          <div class="framework-content">
+            <p><strong>Criador:</strong> Google</p>
+            <p><strong>Finalidade:</strong> Desenvolvimento de aplicações web robustas e escaláveis</p>
+            <p><strong>Características:</strong> Curva de aprendizado alta, arquitetura completa, excelente para grandes projetos</p>
+            <p><strong>Principais usos:</strong> Web corporativo, sistemas complexos</p>
+            <div class="framework-links">
+              <a href="https://angular.io/" target="_blank"><i class="fas fa-book"></i> Documentação</a>
+              <a href="https://en.wikipedia.org/wiki/Angular_(web_framework)" target="_blank"><i class="fab fa-wikipedia-w"></i> Wikipedia</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vue.js -->
+        <div class="framework-item" data-aos="zoom-in">
+          <div class="framework-header">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js" class="framework-icon">
+            <h3>Vue.js</h3>
+            <span class="framework-lang">JavaScript</span>
+          </div>
+          <div class="framework-content">
+            <p><strong>Criador:</strong> Evan You</p>
+            <p><strong>Finalidade:</strong> Interfaces web progressivas e reativas</p>
+            <p><strong>Características:</strong> Curva de aprendizado baixa, leve, fácil integração</p>
+            <p><strong>Principais usos:</strong> Web apps, projetos de rápido desenvolvimento</p>
+            <div class="framework-links">
+              <a href="https://vuejs.org/" target="_blank"><i class="fas fa-book"></i> Documentação</a>
+              <a href="https://en.wikipedia.org/wiki/Vue.js" target="_blank"><i class="fab fa-wikipedia-w"></i> Wikipedia</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Django -->
+        <div class="framework-item" data-aos="zoom-in">
+          <div class="framework-header">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" class="framework-icon">
+            <h3>Django</h3>
+            <span class="framework-lang">Python</span>
+          </div>
+          <div class="framework-content">
+            <p><strong>Criador:</strong> Django Software Foundation</p>
+            <p><strong>Finalidade:</strong> Desenvolvimento web rápido e seguro</p>
+            <p><strong>Características:</strong> Curva de aprendizado moderada, arquitetura MVC, foco em segurança</p>
+            <p><strong>Principais usos:</strong> Web apps, APIs, sites de conteúdo</p>
+            <div class="framework-links">
+              <a href="https://docs.djangoproject.com/pt-br/4.0/" target="_blank"><i class="fas fa-book"></i> Documentação</a>
+              <a href="https://en.wikipedia.org/wiki/Django_(web_framework)" target="_blank"><i class="fab fa-wikipedia-w"></i> Wikipedia</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Spring -->
+        <div class="framework-item" data-aos="zoom-in">
+          <div class="framework-header">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring" class="framework-icon">
+            <h3>Spring</h3>
+            <span class="framework-lang">Java</span>
+          </div>
+          <div class="framework-content">
+            <p><strong>Criador:</strong> Rod Johnson / Pivotal</p>
+            <p><strong>Finalidade:</strong> Desenvolvimento de aplicações corporativas e APIs</p>
+            <p><strong>Características:</strong> Curva de aprendizado alta, muito flexível, robusto</p>
+            <p><strong>Principais usos:</strong> Sistemas corporativos, microserviços</p>
+            <div class="framework-links">
+              <a href="https://spring.io/projects/spring-framework" target="_blank"><i class="fas fa-book"></i> Documentação</a>
+              <a href="https://en.wikipedia.org/wiki/Spring_Framework" target="_blank"><i class="fab fa-wikipedia-w"></i> Wikipedia</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Laravel -->
+        <div class="framework-item" data-aos="zoom-in">
+          <div class="framework-header">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel" class="framework-icon">
+            <h3>Laravel</h3>
+            <span class="framework-lang">PHP</span>
+          </div>
+          <div class="framework-content">
+            <p><strong>Criador:</strong> Taylor Otwell</p>
+            <p><strong>Finalidade:</strong> Desenvolvimento web moderno e elegante</p>
+            <p><strong>Características:</strong> Curva de aprendizado moderada, sintaxe expressiva, foco em produtividade</p>
+            <p><strong>Principais usos:</strong> Web apps, APIs, sistemas de gestão</p>
+            <div class="framework-links">
+              <a href="https://laravel.com/docs" target="_blank"><i class="fas fa-book"></i> Documentação</a>
+              <a href="https://en.wikipedia.org/wiki/Laravel" target="_blank"><i class="fab fa-wikipedia-w"></i> Wikipedia</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Express.js -->
+        <div class="framework-item" data-aos="zoom-in">
+          <div class="framework-header">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js" class="framework-icon">
+            <h3>Express.js</h3>
+            <span class="framework-lang">Node.js</span>
+          </div>
+          <div class="framework-content">
+            <p><strong>Criador:</strong> TJ Holowaychuk</p>
+            <p><strong>Finalidade:</strong> Criação de APIs e servidores web leves</p>
+            <p><strong>Características:</strong> Curva de aprendizado baixa, minimalista, flexível</p>
+            <p><strong>Principais usos:</strong> APIs REST, back-end de aplicações web</p>
+            <div class="framework-links">
+              <a href="https://expressjs.com/pt-br/" target="_blank"><i class="fas fa-book"></i> Documentação</a>
+              <a href="https://en.wikipedia.org/wiki/Express.js" target="_blank"><i class="fab fa-wikipedia-w"></i> Wikipedia</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bootstrap -->
+        <div class="framework-item" data-aos="zoom-in">
+          <div class="framework-header">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" class="framework-icon">
+            <h3>Bootstrap</h3>
+            <span class="framework-lang">CSS/JS</span>
+          </div>
+          <div class="framework-content">
+            <p><strong>Criador:</strong> Twitter</p>
+            <p><strong>Finalidade:</strong> Framework para design responsivo e componentes UI</p>
+            <p><strong>Características:</strong> Curva de aprendizado baixa, fácil de usar, muitos componentes prontos</p>
+            <p><strong>Principais usos:</strong> Sites responsivos, prototipagem rápida</p>
+            <div class="framework-links">
+              <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" target="_blank"><i class="fas fa-book"></i> Documentação</a>
+              <a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)" target="_blank"><i class="fab fa-wikipedia-w"></i> Wikipedia</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flutter -->
+        <div class="framework-item" data-aos="zoom-in">
+          <div class="framework-header">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter" class="framework-icon">
+            <h3>Flutter</h3>
+            <span class="framework-lang">Dart</span>
+          </div>
+          <div class="framework-content">
+            <p><strong>Criador:</strong> Google</p>
+            <p><strong>Finalidade:</strong> Desenvolvimento multiplataforma (iOS, Android, Web)</p>
+            <p><strong>Características:</strong> Performance nativa, hot reload, widgets personalizáveis</p>
+            <p><strong>Principais usos:</strong> Apps móveis, aplicações web, desktop</p>
+            <div class="framework-links">
+              <a href="https://docs.flutter.dev/" target="_blank"><i class="fas fa-book"></i> Documentação</a>
+              <a href="https://en.wikipedia.org/wiki/Flutter_(software)" target="_blank"><i class="fab fa-wikipedia-w"></i> Wikipedia</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Next.js -->
+        <div class="framework-item" data-aos="zoom-in">
+          <div class="framework-header">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" class="framework-icon">
+            <h3>Next.js</h3>
+            <span class="framework-lang">React</span>
+          </div>
+          <div class="framework-content">
+            <p><strong>Criador:</strong> Vercel</p>
+            <p><strong>Finalidade:</strong> Framework React para produção com SSR/SSG</p>
+            <p><strong>Características:</strong> Renderização híbrida, otimização automática, deploy fácil</p>
+            <p><strong>Principais usos:</strong> Sites estáticos, aplicações web, e-commerce</p>
+            <div class="framework-links">
+              <a href="https://nextjs.org/docs" target="_blank"><i class="fas fa-book"></i> Documentação</a>
+              <a href="https://en.wikipedia.org/wiki/Next.js" target="_blank"><i class="fab fa-wikipedia-w"></i> Wikipedia</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- FastAPI -->
+        <div class="framework-item" data-aos="zoom-in">
+          <div class="framework-header">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI" class="framework-icon">
+            <h3>FastAPI</h3>
+            <span class="framework-lang">Python</span>
+          </div>
+          <div class="framework-content">
+            <p><strong>Criador:</strong> Sebastián Ramírez</p>
+            <p><strong>Finalidade:</strong> Criação rápida de APIs com Python</p>
+            <p><strong>Características:</strong> Performance alta, documentação automática, validação automática</p>
+            <p><strong>Principais usos:</strong> APIs REST, microserviços, back-end moderno</p>
+            <div class="framework-links">
+              <a href="https://fastapi.tiangolo.com/" target="_blank"><i class="fas fa-book"></i> Documentação</a>
+              <a href="https://en.wikipedia.org/wiki/FastAPI" target="_blank"><i class="fab fa-wikipedia-w"></i> Wikipedia</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Svelte -->
+        <div class="framework-item" data-aos="zoom-in">
+          <div class="framework-header">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg" alt="Svelte" class="framework-icon">
+            <h3>Svelte</h3>
+            <span class="framework-lang">JavaScript</span>
+          </div>
+          <div class="framework-content">
+            <p><strong>Criador:</strong> Rich Harris</p>
+            <p><strong>Finalidade:</strong> Framework para construção de interfaces reativas e performáticas</p>
+            <p><strong>Características:</strong> Sem virtual DOM, compilação para JS puro, sintaxe simples</p>
+            <p><strong>Principais usos:</strong> Web apps, SPAs, projetos de alta performance</p>
+            <div class="framework-links">
+              <a href="https://svelte.dev/docs" target="_blank"><i class="fas fa-book"></i> Documentação</a>
+              <a href="https://en.wikipedia.org/wiki/Svelte" target="_blank"><i class="fab fa-wikipedia-w"></i> Wikipedia</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção API -->
+    <section id="api" class="section">
+      <div class="section-header" data-aos="fade-up">
+        <h2><i class="fas fa-plug"></i> Exemplo de API</h2>
+        <p>Veja como funciona uma requisição a uma API REST e o retorno em tempo real</p>
+      </div>
+
+      <div class="api-demo" data-aos="fade-up">
+        <div class="api-info">
+          <h3><i class="fas fa-question-circle"></i> O que é uma API?</h3>
+          <p>API (Interface de Programação de Aplicações) é um conjunto de regras que permite que diferentes sistemas se comuniquem. APIs REST utilizam o protocolo HTTP para facilitar integrações entre aplicações.</p>
+        </div>
+
+        <div class="api-example">
+          <h3><i class="fas fa-code"></i> Exemplo: <code>https://api.agify.io/?name=michael</code></h3>
+          
+          <div class="api-card">
+            <div class="api-controls">
+              <label for="nameInput"><i class="fas fa-user"></i> Digite um nome:</label>
+              <input type="text" id="nameInput" value="michael" placeholder="Digite um nome..." />
+              <button onclick="buscarIdade()" id="searchBtn">
+                <i class="fas fa-search"></i> Buscar idade
+              </button>
+            </div>
+            <div class="api-response-block">
+              <h4><i class="fas fa-database"></i> Retorno da API:</h4>
+              <pre><code class="language-json" id="api-response">{
+  "name": "michael",
+  "age": 69,
+  "count": 123456
+}</code></pre>
+            </div>
+          </div>
+          
+          <div class="code-sections">
+            <div class="code-section">
+              <h4><i class="fas fa-code"></i> Código JavaScript:</h4>
+              <pre><code class="language-javascript">// Função para fazer a requisição
+function buscarIdade() {
+  const nome = document.getElementById('nameInput').value;
+  const btn = document.getElementById('searchBtn');
+  // Mostrar loading
+  btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Buscando...';
+  btn.disabled = true;
+  fetch(`https://api.agify.io/?name=${nome}`)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Erro na requisição');
+      }
+      return response.json();
+    })
+    .then(data => {
+      document.getElementById('api-response').textContent = 
+        JSON.stringify(data, null, 2);
+    })
+    .catch(error => {
+      document.getElementById('api-response').textContent = 
+        JSON.stringify({error: "Erro na requisição: " + error.message}, null, 2);
+    })
+    .finally(() => {
+      btn.innerHTML = '<i class="fas fa-search"></i> Buscar idade';
+      btn.disabled = false;
+    });
+}</code></pre>
+            </div>
+          </div>
+          
+          <p class="api-note">
+            <i class="fas fa-info-circle"></i>
+            <em>O retorno acima é um exemplo. Ao buscar um nome, o resultado será atualizado em tempo real. Esta API estima a idade baseada na frequência do nome.</em>
+          </p>
+          
+          <div class="api-links">
+            <a href="https://agify.io/" target="_blank" class="btn">
+              <i class="fas fa-external-link-alt"></i> Site oficial da API Agify
+            </a>
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/API/Fetch_API" target="_blank" class="btn">
+              <i class="fas fa-book"></i> Saiba mais sobre Fetch API
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 - Guia Completo de Desenvolvimento | Desenvolvido por Matheus</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/prism.js"></script>
+  <script>
+    AOS.init();
+    
+    function toggleTheme() {
+      const body = document.body;
+      const current = body.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      body.setAttribute('data-theme', next);
+      document.querySelector('.theme-toggle i').className = next === 'dark' ? 'fas fa-moon' : 'fas fa-sun';
+    }
+
+    function buscarIdade() {
+      const nome = document.getElementById('nameInput').value;
+      const btn = document.getElementById('searchBtn');
+      
+      // Mostrar loading
+      btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Buscando...';
+      btn.disabled = true;
+      
+      fetch(`https://api.agify.io/?name=${nome}`)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Erro na requisição');
+          }
+          return response.json();
+        })
+        .then(data => {
+          document.getElementById('api-response').textContent = 
+            JSON.stringify(data, null, 2);
+        })
+        .catch(error => {
+          document.getElementById('api-response').textContent = 
+            JSON.stringify({error: "Erro na requisição: " + error.message}, null, 2);
+        })
+        .finally(() => {
+          // Restaurar botão
+          btn.innerHTML = '<i class="fas fa-search"></i> Buscar idade';
+          btn.disabled = false;
+        });
+    }
+
+    // Smooth scrolling para links internos
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Traduções principais (exemplo)
+    const translations = {
+      pt: {
+        heroTitle: 'Guia Completo de Desenvolvimento',
+        heroDesc: 'Descubra as principais linguagens de programação, frameworks modernos e como trabalhar com APIs',
+        btnLang: 'Explorar Linguagens',
+        btnFrame: 'Ver Frameworks',
+        btnApi: 'Testar API',
+        sectionLang: 'Linguagens de Programação',
+        sectionLangDesc: 'Conheça as principais linguagens que moldaram a história da computação',
+        sectionFrame: 'Frameworks Modernos',
+        sectionFrameDesc: 'Descubra os frameworks mais utilizados e influentes do mercado',
+        sectionApi: 'Exemplo de API',
+        sectionApiDesc: 'Veja como funciona uma requisição a uma API REST e o retorno em tempo real',
+        apiLabel: 'Digite um nome:',
+        apiBtn: 'Buscar idade',
+        apiInfo: 'O retorno acima é um exemplo. Ao buscar um nome, o resultado será atualizado em tempo real. Esta API estima a idade baseada na frequência do nome.',
+        langs: [
+          {
+            criador: 'Dennis Ritchie (Bell Labs)',
+            objetivo: 'Desenvolvimento de sistemas e softwares de baixo nível',
+            aplicacoes: 'Sistemas operacionais, drivers, embarcados',
+          },
+          {
+            criador: 'James Gosling (Sun Microsystems)',
+            objetivo: 'Portabilidade e aplicações corporativas',
+            aplicacoes: 'Web, mobile, sistemas corporativos',
+          },
+          {
+            criador: 'Guido van Rossum',
+            objetivo: 'Simplicidade e legibilidade',
+            aplicacoes: 'Data Science, web, automação, IA',
+          },
+          {
+            criador: 'Brendan Eich (Netscape)',
+            objetivo: 'Interatividade em páginas web',
+            aplicacoes: 'Web, front-end, back-end (Node.js)',
+          },
+          {
+            criador: 'Bjarne Stroustrup',
+            objetivo: 'Programação orientada a objetos e desempenho',
+            aplicacoes: 'Jogos, sistemas, aplicações de alto desempenho',
+          },
+          {
+            criador: 'Microsoft',
+            objetivo: 'Desenvolvimento na plataforma .NET',
+            aplicacoes: 'Desktop, web, jogos',
+          },
+          {
+            criador: 'Rasmus Lerdorf',
+            objetivo: 'Desenvolvimento web dinâmico',
+            aplicacoes: 'Web, CMS, e-commerce',
+          },
+          {
+            criador: 'Yukihiro Matsumoto',
+            objetivo: 'Simplicidade e produtividade',
+            aplicacoes: 'Web, automação, scripts',
+          },
+          {
+            criador: 'Google (Robert Griesemer, Rob Pike, Ken Thompson)',
+            objetivo: 'Concorrência e eficiência',
+            aplicacoes: 'Microserviços, cloud, sistemas distribuídos',
+          },
+          {
+            criador: 'Mozilla Research',
+            objetivo: 'Segurança de memória e performance',
+            aplicacoes: 'Sistemas, web assembly, embarcados',
+          },
+          {
+            criador: 'Apple',
+            objetivo: 'Desenvolvimento iOS/macOS moderno',
+            aplicacoes: 'iOS, macOS, watchOS, tvOS',
+          },
+          {
+            criador: 'JetBrains',
+            objetivo: 'Desenvolvimento Android moderno e seguro',
+            aplicacoes: 'Android, back-end, multiplataforma',
+          }
+        ],
+        frameworks: [
+          {
+            criador: 'Facebook',
+            finalidade: 'Construção de interfaces de usuário (UI) reativas',
+            caracteristicas: 'Curva de aprendizado moderada, alta performance, grande comunidade',
+            usos: 'Web apps, SPAs, mobile (React Native)',
+          },
+          {
+            criador: 'Google',
+            finalidade: 'Development of robust and scalable web applications',
+            caracteristicas: 'High learning curve, complete architecture, great for large projects',
+            usos: 'Corporate web, complex systems',
+          },
+          {
+            criador: 'Evan You',
+            finalidade: 'Progressive and reactive web interfaces',
+            caracteristicas: 'Low learning curve, lightweight, easy integration',
+            usos: 'Web apps, rapid development projects',
+          },
+          {
+            criador: 'Django Software Foundation',
+            finalidade: 'Fast and secure web development',
+            caracteristicas: 'Moderate learning curve, MVC architecture, security focus',
+            usos: 'Web apps, APIs, content sites',
+          },
+          {
+            criador: 'Rod Johnson / Pivotal',
+            finalidade: 'Development of corporate applications and APIs',
+            caracteristicas: 'High learning curve, very flexible, robust',
+            usos: 'Corporate systems, microservices',
+          },
+          {
+            criador: 'Taylor Otwell',
+            finalidade: 'Modern and elegant web development',
+            caracteristicas: 'Moderate learning curve, expressive syntax, productivity focus',
+            usos: 'Web apps, APIs, management systems',
+          },
+          {
+            criador: 'TJ Holowaychuk',
+            finalidade: 'Creation of APIs and lightweight web servers',
+            caracteristicas: 'Low learning curve, minimalist, flexible',
+            usos: 'REST APIs, web application back-end',
+          },
+          {
+            criador: 'Twitter',
+            finalidade: 'Framework for responsive design and UI components',
+            caracteristicas: 'Low learning curve, easy to use, many ready components',
+            usos: 'Responsive sites, rapid prototyping',
+          },
+          {
+            criador: 'Google',
+            finalidade: 'Cross-platform development (iOS, Android, Web)',
+            caracteristicas: 'Native performance, hot reload, customizable widgets',
+            usos: 'Mobile apps, web applications, desktop',
+          },
+          {
+            criador: 'Vercel',
+            finalidade: 'React framework for production with SSR/SSG',
+            caracteristicas: 'Hybrid rendering, automatic optimization, easy deployment',
+            usos: 'Static sites, web applications, e-commerce',
+          },
+          {
+            criador: 'Sebastián Ramírez',
+            finalidade: 'Fast API creation with Python',
+            caracteristicas: 'High performance, automatic documentation, automatic validation',
+            usos: 'REST APIs, microservices, modern back-end',
+          },
+          {
+            criador: 'Rich Harris',
+            finalidade: 'Framework for building reactive and performant interfaces',
+            caracteristicas: 'No virtual DOM, compilation to pure JS, simple syntax',
+            usos: 'Web apps, SPAs, high-performance projects',
+          }
+        ]
+      },
+      en: {
+        heroTitle: 'Complete Development Guide',
+        heroDesc: 'Discover the main programming languages, modern frameworks and how to work with APIs',
+        btnLang: 'Explore Languages',
+        btnFrame: 'See Frameworks',
+        btnApi: 'Try API',
+        sectionLang: 'Programming Languages',
+        sectionLangDesc: 'Get to know the main languages that shaped the history of computing',
+        sectionFrame: 'Modern Frameworks',
+        sectionFrameDesc: 'Discover the most used and influential frameworks on the market',
+        sectionApi: 'API Example',
+        sectionApiDesc: 'See how a REST API request works and the real-time return',
+        apiLabel: 'Enter a name:',
+        apiBtn: 'Search age',
+        apiInfo: 'The above return is an example. When searching for a name, the result will be updated in real time. This API estimates the age based on the frequency of the name.',
+        langs: [
+          {
+            criador: 'Dennis Ritchie (Bell Labs)',
+            objetivo: 'Development of systems and low-level software',
+            aplicacoes: 'Operating systems, drivers, embedded',
+          },
+          {
+            criador: 'James Gosling (Sun Microsystems)',
+            objetivo: 'Portability and corporate applications',
+            aplicacoes: 'Web, mobile, corporate systems',
+          },
+          {
+            criador: 'Guido van Rossum',
+            objetivo: 'Simplicity and readability',
+            aplicacoes: 'Data Science, web, automation, AI',
+          },
+          {
+            criador: 'Brendan Eich (Netscape)',
+            objetivo: 'Interactivity in web pages',
+            aplicacoes: 'Web, front-end, back-end (Node.js)',
+          },
+          {
+            criador: 'Bjarne Stroustrup',
+            objetivo: 'Object-oriented programming and performance',
+            aplicacoes: 'Games, systems, high-performance applications',
+          },
+          {
+            criador: 'Microsoft',
+            objetivo: 'Development on the .NET platform',
+            aplicacoes: 'Desktop, web, games',
+          },
+          {
+            criador: 'Rasmus Lerdorf',
+            objetivo: 'Dynamic web development',
+            aplicacoes: 'Web, CMS, e-commerce',
+          },
+          {
+            criador: 'Yukihiro Matsumoto',
+            objetivo: 'Simplicity and productivity',
+            aplicacoes: 'Web, automation, scripts',
+          },
+          {
+            criador: 'Google (Robert Griesemer, Rob Pike, Ken Thompson)',
+            objetivo: 'Concurrency and efficiency',
+            aplicacoes: 'Microservices, cloud, distributed systems',
+          },
+          {
+            criador: 'Mozilla Research',
+            objetivo: 'Memory safety and performance',
+            aplicacoes: 'Systems, web assembly, embedded',
+          },
+          {
+            criador: 'Apple',
+            objetivo: 'Modern iOS/macOS development',
+            aplicacoes: 'iOS, macOS, watchOS, tvOS',
+          },
+          {
+            criador: 'JetBrains',
+            objetivo: 'Modern and secure Android development',
+            aplicacoes: 'Android, back-end, cross-platform',
+          }
+        ],
+        frameworks: [
+          {
+            criador: 'Facebook',
+            finalidade: 'Building reactive user interfaces (UI)',
+            caracteristicas: 'Moderate learning curve, high performance, large community',
+            usos: 'Web apps, SPAs, mobile (React Native)',
+          },
+          {
+            criador: 'Google',
+            finalidade: 'Development of robust and scalable web applications',
+            caracteristicas: 'High learning curve, complete architecture, great for large projects',
+            usos: 'Corporate web, complex systems',
+          },
+          {
+            criador: 'Evan You',
+            finalidade: 'Progressive and reactive web interfaces',
+            caracteristicas: 'Low learning curve, lightweight, easy integration',
+            usos: 'Web apps, rapid development projects',
+          },
+          {
+            criador: 'Django Software Foundation',
+            finalidade: 'Fast and secure web development',
+            caracteristicas: 'Moderate learning curve, MVC architecture, security focus',
+            usos: 'Web apps, APIs, content sites',
+          },
+          {
+            criador: 'Rod Johnson / Pivotal',
+            finalidade: 'Development of corporate applications and APIs',
+            caracteristicas: 'High learning curve, very flexible, robust',
+            usos: 'Corporate systems, microservices',
+          },
+          {
+            criador: 'Taylor Otwell',
+            finalidade: 'Modern and elegant web development',
+            caracteristicas: 'Moderate learning curve, expressive syntax, productivity focus',
+            usos: 'Web apps, APIs, management systems',
+          },
+          {
+            criador: 'TJ Holowaychuk',
+            finalidade: 'Creation of APIs and lightweight web servers',
+            caracteristicas: 'Low learning curve, minimalist, flexible',
+            usos: 'REST APIs, web application back-end',
+          },
+          {
+            criador: 'Twitter',
+            finalidade: 'Framework for responsive design and UI components',
+            caracteristicas: 'Low learning curve, easy to use, many ready components',
+            usos: 'Responsive sites, rapid prototyping',
+          },
+          {
+            criador: 'Google',
+            finalidade: 'Cross-platform development (iOS, Android, Web)',
+            caracteristicas: 'Native performance, hot reload, customizable widgets',
+            usos: 'Mobile apps, web applications, desktop',
+          },
+          {
+            criador: 'Vercel',
+            finalidade: 'React framework for production with SSR/SSG',
+            caracteristicas: 'Hybrid rendering, automatic optimization, easy deployment',
+            usos: 'Static sites, web applications, e-commerce',
+          },
+          {
+            criador: 'Sebastián Ramírez',
+            finalidade: 'Fast API creation with Python',
+            caracteristicas: 'High performance, automatic documentation, automatic validation',
+            usos: 'REST APIs, microservices, modern back-end',
+          },
+          {
+            criador: 'Rich Harris',
+            finalidade: 'Framework for building reactive and performant interfaces',
+            caracteristicas: 'No virtual DOM, compilation to pure JS, simple syntax',
+            usos: 'Web apps, SPAs, high-performance projects',
+          }
+        ]
+      }
+    };
+
+    let currentLang = 'pt';
+    function toggleLang() {
+      console.log('Função toggleLang executada!');
+      currentLang = currentLang === 'pt' ? 'en' : 'pt';
+      const t = translations[currentLang];
+      
+      // Tradução dos textos principais
+      document.querySelector('.hero h1').textContent = t.heroTitle;
+      document.querySelector('.hero p').textContent = t.heroDesc;
+      document.querySelector('.cta-buttons a:nth-child(1)').textContent = t.btnLang;
+      document.querySelector('.cta-buttons a:nth-child(2)').textContent = t.btnFrame;
+      document.querySelector('.cta-buttons a:nth-child(3)').textContent = t.btnApi;
+      document.querySelector('#linguagens .section-header h2').innerHTML = '<i class="fas fa-terminal"></i> ' + t.sectionLang;
+      document.querySelector('#linguagens .section-header p').textContent = t.sectionLangDesc;
+      document.querySelector('#frameworks .section-header h2').innerHTML = '<i class="fas fa-layer-group"></i> ' + t.sectionFrame;
+      document.querySelector('#frameworks .section-header p').textContent = t.sectionFrameDesc;
+      document.querySelector('#api .section-header h2').innerHTML = '<i class="fas fa-plug"></i> ' + t.sectionApi;
+      document.querySelector('#api .section-header p').textContent = t.sectionApiDesc;
+      document.querySelector('.api-controls label').innerHTML = `<i class='fas fa-user'></i> ${t.apiLabel}`;
+      document.getElementById('searchBtn').innerHTML = `<i class='fas fa-search'></i> ${t.apiBtn}`;
+      document.querySelector('.api-note em').textContent = t.apiInfo;
+
+      // Tradução dos cards de linguagens
+      const langCards = document.querySelectorAll('.timeline-item');
+      console.log('Cards de linguagens encontrados:', langCards.length);
+      
+      t.langs.forEach((lang, i) => {
+        if (langCards[i]) {
+          const details = langCards[i].querySelector('.lang-details');
+          if (details) {
+            const ps = details.querySelectorAll('p');
+            if (ps[0]) ps[0].innerHTML = `<strong>${currentLang === 'pt' ? 'Criador' : 'Creator'}:</strong> ${lang.criador}`;
+            if (ps[1]) ps[1].innerHTML = `<strong>${currentLang === 'pt' ? 'Objetivo' : 'Goal'}:</strong> ${lang.objetivo}`;
+            if (ps[2]) ps[2].innerHTML = `<strong>${currentLang === 'pt' ? 'Aplicações' : 'Applications'}:</strong> ${lang.aplicacoes}`;
+            console.log(`Card ${i} traduzido:`, lang.criador);
+          }
+        }
+      });
+
+      // Tradução dos cards de frameworks
+      const fwCards = document.querySelectorAll('.framework-item');
+      console.log('Cards de frameworks encontrados:', fwCards.length);
+      
+      t.frameworks.forEach((fw, i) => {
+        if (fwCards[i]) {
+          const content = fwCards[i].querySelector('.framework-content');
+          if (content) {
+            const ps = content.querySelectorAll('p');
+            if (ps[0]) ps[0].innerHTML = `<strong>${currentLang === 'pt' ? 'Criador' : 'Creator'}:</strong> ${fw.criador}`;
+            if (ps[1]) ps[1].innerHTML = `<strong>${currentLang === 'pt' ? 'Finalidade' : 'Purpose'}:</strong> ${fw.finalidade}`;
+            if (ps[2]) ps[2].innerHTML = `<strong>${currentLang === 'pt' ? 'Características' : 'Features'}:</strong> ${fw.caracteristicas}`;
+            if (ps[3]) ps[3].innerHTML = `<strong>${currentLang === 'pt' ? 'Principais usos' : 'Main uses'}:</strong> ${fw.usos}`;
+            console.log(`Framework ${i} traduzido:`, fw.criador);
+          }
+        }
+      });
+      
+      console.log('Tradução concluída! Idioma atual:', currentLang);
+    }
+  </script>
+</body>
+</html> 
